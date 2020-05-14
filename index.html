@@ -9,14 +9,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task</title>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js"></script>
 </head>
 
 <body>
-
+    <main>
+        <section class="competences">
+            <div class="competences__wrapper wrapper">
+                <h2 class="section__title section__title--competences">Obszary naszych kompetencji</h2>
+                <p class="competences__paragraph">
+                    Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.
+                </p>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="form-section__wrapper wrapper">
+                <h2 class="section__title section__title--form">Skontaktuj się z nami</h2>
+                <p class="form-section__paragraph">
+                    Zadzwoń <a href="tel:535015835" class="form-section__link">+48 535 015 835</a> lub wypełnij formularz.
+                </p>
+                <form class="form">
+                    <div class="form__wrapper">
+                        <div class="form__item-wrapper">
+                            <label for="name" class="sr-only">Imię i Nazwisko</label>
+                            <input type="text" maxlength="80" placeholder="Imię i Nazwisko" required class="form__item" id="name" />
+                        </div>
+                        <div class="form__item-wrapper">
+                            <label for="phone" class="sr-only">Telefon</label>
+                            <input type="tel" placeholder="Telefon" required class="form__item" id="phone" />
+                        </div>
+                        <div class="form__item-wrapper">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" placeholder="Email" required class="form__item" id="email" />
+                        </div>
+                        <div class="form__item-wrapper">
+                            <label for="company" class="sr-only">Firma</label>
+                            <input type="text" maxlength="100" placeholder="Firma" required class="form__item" id="company" />
+                        </div>
+                        <div class="form__item-wrapper">
+                            <label for="workers" class="sr-only">Ilość pracowników</label>
+                            <input type="number" placeholder="Ilość pracowników" required class="form__item" id="workers" min="0" />
+                        </div>
+                        <div class="form__item-wrapper">
+                            <label for="profit" class="sr-only">Roczny dochód firmy</label>
+                            <input type="number" placeholder="Roczny dochód firmy" required class="form__item" id="profit" />
+                        </div>
+                        <div class="form__item-wrapper">
+                            <label for="message" class="sr-only">Wiadomość</label>
+                            <textarea placeholder="Wiadomość" required class="form__item form__input--textarea" id="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="agreement__wrapper">
+                        <input type="checkbox" class="agreement__checkbox" id="agreement__checkbox">
+                        <label for="agreement__checkbox" class="sr-only">Zapoznałem się z regulaminem</label>
+                        <p class="agreement__paragraph">
+                            Zapozanałem(-łam) się z
+                            <a href="#" target="_blank" class="agreement__link">Polityką prywatności</a>
+                            oraz z <a href="#" target="_blank" class="agreement__link">Zastrzeżeniami prawnymi</a>
+                            <span class="agreement__span">.</span>
+                        </p>
+                    </div>
+                    <button class="form__btn" type="submit">Wyślij</button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
