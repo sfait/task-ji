@@ -97,17 +97,17 @@ html, body {
 }
 
 .gear__item:nth-of-type(1) {
-    transform: rotate(-90deg) translate(315px) rotate(90deg);
+    transform: rotate(-90deg) translate(325px) rotate(90deg);
 }
 
 .gear__item:nth-of-type(2) {
     transform: rotate(-63deg) translate(290px) rotate(63deg);
-    right: 0;
+    right: -20px;
 }
 
 .gear__item:nth-of-type(3) {
     transform: rotate(-30deg) translate(298px) rotate(30deg);
-    right: -60px;
+    right: -70px;
 }
 
 .gear__item:nth-of-type(4) {
@@ -117,41 +117,41 @@ html, body {
 
 .gear__item:nth-of-type(5) {
     transform: rotate(-330deg) translate(298px) rotate(330deg);
-    right: -35px;
+    right: -45px;
 }
 
 .gear__item:nth-of-type(6) {
     transform: rotate(-300deg) translate(298px) rotate(300deg);
-    right: 20px;
+    right: 10px;
 }
 
 .gear__item:nth-of-type(7) {
-    transform: rotate(90deg) translate(315px) rotate(-90deg);
+    transform: rotate(90deg) translate(325px) rotate(-90deg);
 }
 
 .gear__item:nth-of-type(8) {
     transform: rotate(-240deg) translate(298px) rotate(240deg);
-    left: -20px;
+    left: -35px;
 }
 
 .gear__item:nth-of-type(9) {
     transform: rotate(-210deg) translate(298px) rotate(210deg);
-    left: 50px;
+    left: 35px;
 }
 
 .gear__item:nth-of-type(10) {
     transform: rotate(180deg) translate(298px) rotate(-180deg);
-    left: 150px;
+    left: 145px;
 }
 
 .gear__item:nth-of-type(11) {
     transform: rotate(-150deg) translate(298px) rotate(150deg);
-    left: 30px;
+    left: 20px;
 }
 
 .gear__item:nth-of-type(12) {
     transform: rotate(-120deg) translate(298px) rotate(120deg);
-    left: 150px;
+    left: 135px;
 }
 
 .gear__link {
@@ -169,7 +169,6 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: yellow; */
 }
 
 .gear__text {
@@ -178,6 +177,22 @@ html, body {
     font-size: 16px;
     font-weight: 600;
     line-height: 33px;
+}
+
+.gear__text--margin-top {
+    margin-top: 11px;
+}
+
+.gear__text--margin-right {
+    margin-right: 11px;
+}
+
+.gear__text--margin-bottom {
+    margin-bottom: 11px;
+}
+
+.gear__text--margin-left {
+    margin-left: 11px;
 }
 
 .gear__icon-wrapper {
