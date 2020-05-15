@@ -36,18 +36,22 @@
                         <div class="form__item-wrapper form__item-wrapper--input">
                             <label for="name" class="sr-only">Imię i Nazwisko</label>
                             <input type="text" maxlength="80" placeholder="Imię i Nazwisko" required class="form__item form__item--input" id="name" />
+                            <span class="focus-bg"></span>
                         </div>
                         <div class="form__item-wrapper form__item-wrapper--input">
                             <label for="phone" class="sr-only">Telefon</label>
                             <input type="tel" placeholder="Telefon" required class="form__item form__item--input" id="phone" />
+                            <span class="focus-bg"></span>
                         </div>
                         <div class="form__item-wrapper form__item-wrapper--input">
                             <label for="email" class="sr-only">Email</label>
                             <input type="email" placeholder="Email" required class="form__item form__item--input" id="email" />
+                            <span class="focus-bg"></span>
                         </div>
                         <div class="form__item-wrapper form__item-wrapper--input">
                             <label for="company" class="sr-only">Firma</label>
                             <input type="text" maxlength="100" placeholder="Firma" required class="form__item form__item--input" id="company" />
+                            <span class="focus-bg"></span>
                         </div>
                         <div class="form__item-wrapper form__item-wrapper--input">
                             <label for="workers" class="sr-only">Ilość pracowników</label>
@@ -72,6 +76,7 @@
                         <div class="form__item-wrapper form__item-wrapper--textarea">
                             <label for="message" class="sr-only">Wiadomość</label>
                             <textarea placeholder="Wiadomość" required class="form__item form__item--textarea" id="message"></textarea>
+                            <span class="focus-bg"></span>
                         </div>
                     </div>
                     <div class="checkbox__wrapper">
@@ -81,7 +86,10 @@
                                 class="agreement__span">.</span>
                         </label>
                     </div>
-                    <button class="form__btn" type="submit">Wyślij</button>
+                    <div class="form__btn-wrapper">
+                        <button class="form__btn" type="submit">Wyślij</button>
+                        <span class="hover__btn-bg"></span>
+                    </div>
                 </form>
             </div>
         </section>

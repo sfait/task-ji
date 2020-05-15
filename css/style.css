@@ -67,9 +67,18 @@ html, body {
 
 .form-section__wrapper {
     padding-top: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
 }
@@ -91,6 +100,8 @@ html, body {
     color: #fff;
     font-weight: 700;
     text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     margin: 0 0.2rem;
 }
@@ -106,29 +117,43 @@ html, body {
 .form__wrapper {
     width: 100%;
     max-width: 951px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .form__item-wrapper {
     width: 100%;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    position: relative;
+    margin: 0.5rem 0;
 }
 
 .form__item {
     width: 100%;
     min-width: 306px;
     height: 50px;
-    border-radius: 5px;
-    border: 1px solid #dbdbdb;
-    background: #fff;
+    border: none;
+    background: transparent;
     color: #565e66;
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     padding: 0.5rem;
-    margin: 0.5rem 0;
+    position: relative;
+    z-index: 2;
 }
 
 .form__item--select {
@@ -136,6 +161,7 @@ html, body {
     -webkit-appearance: none;
     background-position-x: 95%;
     color: #565e66;
+    border-radius: 5px;
 }
 
 .form__item-wrapper--textarea {
@@ -150,6 +176,54 @@ html, body {
     margin: 0.5rem 0;
 }
 
+.form__item~.focus-bg:before,
+.form__item~.focus-bg:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: #dbdbdb;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.form__item~.focus-bg:before {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.form__item~.focus-bg:after {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form__item:focus~.focus-bg:before {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: 50%;
+    height: 100%;
+}
+
+.form__item~.focus-bg:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.form__item:focus~.focus-bg:after {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: 50%;
+    height: 100%;
+}
+
 .checkbox__wrapper {
     width: 100%;
     margin: 33px 0;
@@ -160,16 +234,18 @@ html, body {
     display: none;
 }
 
-.checkbox + .checkbox__label {
+.checkbox+.checkbox__label {
     display: inline-block;
     cursor: pointer;
     background-color: transparent;
     position: relative;
     border: 1px solid transparent;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
     transition: all 200ms ease;
 }
 
-.checkbox + .checkbox__label:before {
+.checkbox+.checkbox__label:before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -181,11 +257,15 @@ html, body {
     border-radius: 3px;
     border: 1px solid #dbdbdb;
     background-color: #fff;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
     transition: all 200ms ease;
 }
 
-.checkbox:checked + .checkbox__label:before {
+.checkbox:checked+.checkbox__label:before {
     content: "🗸";
     background-color: #fff;
     color: #35a8e0;
@@ -215,11 +295,20 @@ html, body {
     color: #565e66;
 }
 
-.form__btn {
+.form__btn-wrapper {
     width: 163px;
     height: 52px;
-    border-radius: 5px;
     background: #35a8e0;
+    border-radius: 5px;
+    margin: 0 auto 66px;
+    z-index: 1;
+}
+
+.form__btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: transparent;
     border: none;
     color: #fff;
     font-size: 0.85rem;
@@ -227,24 +316,61 @@ html, body {
     line-height: 18px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background 0.6s;
-    margin-bottom: 66px;
+    position: relative;
+    z-index: 2;
 }
 
-.form__btn:hover {
+.form__btn::before,
+.form__btn::after {
+    content: "";
+    width: 0%;
+    height: 100%;
     background: #1e88be;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.form__btn::before {
+    left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.form__btn::after {
+    right: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form__btn:hover::before,
+.form__btn:hover::after {
+    width: 50%;
 }
 
 /* media queries*/
 @media only screen and (min-width: 700px) {
+
     /* form */
     .form__wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 
     .form__item-wrapper--input {
         max-width: 306px;
+        margin: 0.5rem 0.2rem;
+    }
+
+    .form__item-wrapper--textarea {
+        width: 80%;
     }
 
     .form__item--input {
@@ -261,8 +387,19 @@ html, body {
 }
 
 @media only screen and (min-width: 1024px) {
+
     /* form */
     .form__wrapper {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+    }
+
+    .form__item-wrapper--input {
+        margin: 0.5rem 0;
+    }
+
+    .form__item-wrapper--textarea {
+        width: 100%;
     }
 }
