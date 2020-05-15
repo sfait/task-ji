@@ -166,14 +166,15 @@ html, body {
 
 .form__item-wrapper--textarea {
     width: 100%;
+    max-width: 951px;
+    height: 124px;
+    margin: 0.5rem 0;
 }
 
 .form__item--textarea {
     width: 100%;
-    max-width: 951px;
-    height: 124px;
-    resize: none;
-    margin: 0.5rem 0;
+    height: 100%;
+    resize: none
 }
 
 .form__item~.focus-bg:before,
@@ -370,15 +371,11 @@ html, body {
     }
 
     .form__item-wrapper--textarea {
-        width: 80%;
+        max-width: 620px;
     }
 
     .form__item--input {
         max-width: 306px;
-    }
-
-    .form__item--textarea {
-        margin: 0.5rem 0;
     }
 
     .checkbox__label {
@@ -401,5 +398,6 @@ html, body {
 
     .form__item-wrapper--textarea {
         width: 100%;
+        max-width: 951px;
     }
 }
