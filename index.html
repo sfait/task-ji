@@ -51,11 +51,23 @@
                         </div>
                         <div class="form__item-wrapper">
                             <label for="workers" class="sr-only">Ilość pracowników</label>
-                            <input type="number" placeholder="Ilość pracowników" required class="form__item" id="workers" min="0" />
+                            <select required class="form__item form__item--select" id="workers">
+                                <option default>Ilość pracowników</option>
+                                <option value="option1">0-10</option>
+                                <option value="option2">11-50</option>
+                                <option value="option3">51-100</option>
+                                <option value="option4">> 101</option>
+                            </select>
                         </div>
                         <div class="form__item-wrapper">
                             <label for="profit" class="sr-only">Roczny dochód firmy</label>
-                            <input type="number" placeholder="Roczny dochód firmy" required class="form__item" id="profit" />
+                            <select required class="form__item form__item--select" id="profit">
+                                <option default>Roczny dochód firmy</option>
+                                <option value="option1">< 1000</option>
+                                <option value="option2">1001-5000</option>
+                                <option value="option3">5001-10000</option>
+                                <option value="option4">> 10001</option>
+                            </select>
                         </div>
                         <div class="form__item-wrapper">
                             <label for="message" class="sr-only">Wiadomość</label>
@@ -63,7 +75,7 @@
                         </div>
                     </div>
                     <div class="checkbox__wrapper">
-                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <input type="checkbox" class="checkbox" id="checkbox" required>
                         <label for="checkbox" class="checkbox__label">
                             Zapozanałem(-łam) się z <a href="#" target="_blank" class="agreement__link">Polityką prywatności</a> oraz z <a href="#" target="_blank" class="agreement__link">Zastrzeżeniami prawnymi</a><span
                                 class="agreement__span">.</span>
