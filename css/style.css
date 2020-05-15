@@ -104,15 +104,21 @@ html, body {
 }
 
 .form__wrapper {
+    width: 100%;
+    max-width: 951px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.form__item-wrapper {
+    width: 100%;
+}
+
 .form__item {
-    width: 306px;
+    width: 100%;
+    min-width: 306px;
     height: 50px;
     border-radius: 5px;
     border: 1px solid #dbdbdb;
@@ -122,7 +128,7 @@ html, body {
     font-weight: 400;
     line-height: 24px;
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .form__item--select {
@@ -132,18 +138,20 @@ html, body {
     color: #565e66;
 }
 
-.form__input--textarea {
-    width: 951px;
+.form__item-wrapper--textarea {
+    width: 100%;
+}
+
+.form__item--textarea {
+    width: 100%;
+    max-width: 951px;
     height: 124px;
     resize: none;
+    margin: 0.5rem 0;
 }
 
 .checkbox__wrapper {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     margin: 33px 0;
 }
 
@@ -191,6 +199,7 @@ html, body {
     font-size: 0.85rem;
     font-weight: 400;
     line-height: 16px;
+    margin-left: 35px;
 }
 
 .agreement__link {
@@ -227,4 +236,33 @@ html, body {
 }
 
 /* media queries*/
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 700px) {
+    /* form */
+    .form__wrapper {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .form__item-wrapper--input {
+        max-width: 306px;
+    }
+
+    .form__item--input {
+        max-width: 306px;
+    }
+
+    .form__item--textarea {
+        margin: 0.5rem 0;
+    }
+
+    .checkbox__label {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* form */
+    .form__wrapper {
+        justify-content: space-between;
+    }
+}
