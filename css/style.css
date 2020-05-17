@@ -573,10 +573,8 @@ body {
     }
 
     .gear__item-wrapper {
-        max-width: 596px;
-        height: 596px;
-        /* max-width: 396px;
-        height: 396px; */
+        max-width: 496px;
+        height: 496px;
         border: 1px solid #d4dbe0;
         background: url("../img/gear.png") no-repeat center/78.69%;
         border-radius: 50%;
@@ -584,6 +582,7 @@ body {
 
     .list__title {
         padding: 0;
+        font-size: 0.8rem;
     }
 
     .gear__item {
@@ -598,90 +597,90 @@ body {
     }
 
     .gear__item:nth-of-type(1) {
-        -webkit-transform: rotate(-90deg) translate(325px) rotate(90deg);
-        -ms-transform: rotate(-90deg) translate(325px) rotate(90deg);
-        transform: rotate(-90deg) translate(325px) rotate(90deg);
+        -webkit-transform: rotate(-90deg) translate(270px) rotate(90deg);
+        -ms-transform: rotate(-90deg) translate(270px) rotate(90deg);
+        transform: rotate(-90deg) translate(270px) rotate(90deg);
     }
 
     .gear__item:nth-of-type(2) {
-        -webkit-transform: rotate(-60deg) translate(290px) rotate(60deg);
-        -ms-transform: rotate(-60deg) translate(290px) rotate(60deg);
-        transform: rotate(-60deg) translate(290px) rotate(60deg);
-        left: 275px;
+        -webkit-transform: rotate(-60deg) translate(250px) rotate(60deg);
+        -ms-transform: rotate(-60deg) translate(250px) rotate(60deg);
+        transform: rotate(-60deg) translate(250px) rotate(60deg);
+        left: 215px;
     }
 
     .gear__item:nth-of-type(3) {
-        -webkit-transform: rotate(-30deg) translate(298px) rotate(30deg);
-        -ms-transform: rotate(-30deg) translate(298px) rotate(30deg);
-        transform: rotate(-30deg) translate(298px) rotate(30deg);
-        left: 260px;
+        -webkit-transform: rotate(-30deg) translate(250px) rotate(30deg);
+        -ms-transform: rotate(-30deg) translate(250px) rotate(30deg);
+        transform: rotate(-30deg) translate(250px) rotate(30deg);
+        left: 210px;
     }
 
     .gear__item:nth-of-type(4) {
-        -webkit-transform: rotate(0deg) translate(298px) rotate(-0deg);
-        -ms-transform: rotate(0deg) translate(298px) rotate(-0deg);
-        transform: rotate(0deg) translate(298px) rotate(-0deg);
-        left: 255px;
-    }
-
-    .gear__item:nth-of-type(5) {
-        -webkit-transform: rotate(-330deg) translate(298px) rotate(330deg);
-        -ms-transform: rotate(-330deg) translate(298px) rotate(330deg);
-        transform: rotate(-330deg) translate(298px) rotate(330deg);
+        -webkit-transform: rotate(0deg) translate(200px) rotate(-0deg);
+        -ms-transform: rotate(0deg) translate(200px) rotate(-0deg);
+        transform: rotate(0deg) translate(200px) rotate(-0deg);
         left: 260px;
     }
 
+    .gear__item:nth-of-type(5) {
+        -webkit-transform: rotate(-330deg) translate(250px) rotate(330deg);
+        -ms-transform: rotate(-330deg) translate(250px) rotate(330deg);
+        transform: rotate(-330deg) translate(250px) rotate(330deg);
+        left: 210px;
+    }
+
     .gear__item:nth-of-type(6) {
-        -webkit-transform: rotate(-300deg) translate(298px) rotate(300deg);
-        -ms-transform: rotate(-300deg) translate(298px) rotate(300deg);
-        transform: rotate(-300deg) translate(298px) rotate(300deg);
-        left: 275px;
+        -webkit-transform: rotate(-300deg) translate(250px) rotate(300deg);
+        -ms-transform: rotate(-300deg) translate(250px) rotate(300deg);
+        transform: rotate(-300deg) translate(250px) rotate(300deg);
+        left: 210px;
     }
 
     .gear__item:nth-of-type(7) {
-        -webkit-transform: rotate(90deg) translate(315px) rotate(-90deg);
-        -ms-transform: rotate(90deg) translate(315px) rotate(-90deg);
-        transform: rotate(90deg) translate(315px) rotate(-90deg);
+        -webkit-transform: rotate(90deg) translate(270px) rotate(-90deg);
+        -ms-transform: rotate(90deg) translate(270px) rotate(-90deg);
+        transform: rotate(90deg) translate(270px) rotate(-90deg);
     }
 
     .gear__item:nth-of-type(8) {
-        -webkit-transform: rotate(-240deg) translate(298px) rotate(240deg);
-        -ms-transform: rotate(-240deg) translate(298px) rotate(240deg);
-        transform: rotate(-240deg) translate(298px) rotate(240deg);
-        right: 260px;
+        -webkit-transform: rotate(-240deg) translate(250px) rotate(240deg);
+        -ms-transform: rotate(-240deg) translate(250px) rotate(240deg);
+        transform: rotate(-240deg) translate(250px) rotate(240deg);
+        right: 210px;
     }
 
     .gear__item:nth-of-type(9) {
-        -webkit-transform: rotate(-210deg) translate(298px) rotate(210deg);
-        -ms-transform: rotate(-210deg) translate(298px) rotate(210deg);
-        transform: rotate(-210deg) translate(298px) rotate(210deg);
-        right: 275px;
+        -webkit-transform: rotate(-210deg) translate(250px) rotate(210deg);
+        -ms-transform: rotate(-210deg) translate(250px) rotate(210deg);
+        transform: rotate(-210deg) translate(250px) rotate(210deg);
+        right: 210px;
     }
 
     .gear__item:nth-of-type(10) {
-        -webkit-transform: rotate(180deg) translate(298px) rotate(-180deg);
-        -ms-transform: rotate(180deg) translate(298px) rotate(-180deg);
-        transform: rotate(180deg) translate(298px) rotate(-180deg);
-        right: 250px;
+        -webkit-transform: rotate(180deg) translate(250px) rotate(-180deg);
+        -ms-transform: rotate(180deg) translate(250px) rotate(-180deg);
+        transform: rotate(180deg) translate(250px) rotate(-180deg);
+        right: 220px;
     }
 
     .gear__item:nth-of-type(11) {
-        -webkit-transform: rotate(-150deg) translate(298px) rotate(150deg);
-        -ms-transform: rotate(-150deg) translate(298px) rotate(150deg);
-        transform: rotate(-150deg) translate(298px) rotate(150deg);
-        right: 275px;
+        -webkit-transform: rotate(-150deg) translate(250px) rotate(150deg);
+        -ms-transform: rotate(-150deg) translate(250px) rotate(150deg);
+        transform: rotate(-150deg) translate(250px) rotate(150deg);
+        right: 210px;
     }
 
     .gear__item:nth-of-type(12) {
-        -webkit-transform: rotate(-120deg) translate(298px) rotate(120deg);
-        -ms-transform: rotate(-120deg) translate(298px) rotate(120deg);
-        transform: rotate(-120deg) translate(298px) rotate(120deg);
-        right: 260px;
+        -webkit-transform: rotate(-120deg) translate(250px) rotate(120deg);
+        -ms-transform: rotate(-120deg) translate(250px) rotate(120deg);
+        transform: rotate(-120deg) translate(250px) rotate(120deg);
+        right: 210px;
     }
 
     .gear__text {
-        width: auto;
-        font-size: 1rem;
+        min-width: auto;
+        font-size: 0.8rem;
         line-height: 1.44rem;
         padding: 0;
     }
@@ -706,6 +705,7 @@ body {
 
     .gear__icon-wrapper {
         min-width: 80px;
+        min-height: 80px;
         background: #f4f7f9;
         border: 3px solid #d4dbe0;
         position: relative;
@@ -802,5 +802,109 @@ body {
 
     .checkbox__wrapper {
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+
+    /* gear */
+    .gear__item-wrapper {
+        max-width: 596px;
+        height: 596px;
+    }
+
+    .list__title {
+        font-size: 1rem;
+    }
+
+    .gear__item:nth-of-type(1) {
+        -webkit-transform: rotate(-90deg) translate(325px) rotate(90deg);
+        -ms-transform: rotate(-90deg) translate(325px) rotate(90deg);
+        transform: rotate(-90deg) translate(325px) rotate(90deg);
+    }
+
+    .gear__item:nth-of-type(2) {
+        -webkit-transform: rotate(-60deg) translate(290px) rotate(60deg);
+        -ms-transform: rotate(-60deg) translate(290px) rotate(60deg);
+        transform: rotate(-60deg) translate(290px) rotate(60deg);
+        left: 275px;
+    }
+
+    .gear__item:nth-of-type(3) {
+        -webkit-transform: rotate(-30deg) translate(298px) rotate(30deg);
+        -ms-transform: rotate(-30deg) translate(298px) rotate(30deg);
+        transform: rotate(-30deg) translate(298px) rotate(30deg);
+        left: 260px;
+    }
+
+    .gear__item:nth-of-type(4) {
+        -webkit-transform: rotate(0deg) translate(298px) rotate(-0deg);
+        -ms-transform: rotate(0deg) translate(298px) rotate(-0deg);
+        transform: rotate(0deg) translate(298px) rotate(-0deg);
+        left: 255px;
+    }
+
+    .gear__item:nth-of-type(5) {
+        -webkit-transform: rotate(-330deg) translate(298px) rotate(330deg);
+        -ms-transform: rotate(-330deg) translate(298px) rotate(330deg);
+        transform: rotate(-330deg) translate(298px) rotate(330deg);
+        left: 260px;
+    }
+
+    .gear__item:nth-of-type(6) {
+        -webkit-transform: rotate(-300deg) translate(298px) rotate(300deg);
+        -ms-transform: rotate(-300deg) translate(298px) rotate(300deg);
+        transform: rotate(-300deg) translate(298px) rotate(300deg);
+        left: 275px;
+    }
+
+    .gear__item:nth-of-type(7) {
+        -webkit-transform: rotate(90deg) translate(315px) rotate(-90deg);
+        -ms-transform: rotate(90deg) translate(315px) rotate(-90deg);
+        transform: rotate(90deg) translate(315px) rotate(-90deg);
+    }
+
+    .gear__item:nth-of-type(8) {
+        -webkit-transform: rotate(-240deg) translate(298px) rotate(240deg);
+        -ms-transform: rotate(-240deg) translate(298px) rotate(240deg);
+        transform: rotate(-240deg) translate(298px) rotate(240deg);
+        right: 260px;
+    }
+
+    .gear__item:nth-of-type(9) {
+        -webkit-transform: rotate(-210deg) translate(298px) rotate(210deg);
+        -ms-transform: rotate(-210deg) translate(298px) rotate(210deg);
+        transform: rotate(-210deg) translate(298px) rotate(210deg);
+        right: 275px;
+    }
+
+    .gear__item:nth-of-type(10) {
+        -webkit-transform: rotate(180deg) translate(298px) rotate(-180deg);
+        -ms-transform: rotate(180deg) translate(298px) rotate(-180deg);
+        transform: rotate(180deg) translate(298px) rotate(-180deg);
+        right: 250px;
+    }
+
+    .gear__item:nth-of-type(11) {
+        -webkit-transform: rotate(-150deg) translate(298px) rotate(150deg);
+        -ms-transform: rotate(-150deg) translate(298px) rotate(150deg);
+        transform: rotate(-150deg) translate(298px) rotate(150deg);
+        right: 275px;
+    }
+
+    .gear__item:nth-of-type(12) {
+        -webkit-transform: rotate(-120deg) translate(298px) rotate(120deg);
+        -ms-transform: rotate(-120deg) translate(298px) rotate(120deg);
+        transform: rotate(-120deg) translate(298px) rotate(120deg);
+        right: 260px;
+    }
+
+    .gear__text {
+        font-size: 1rem;
+    }
+
+    .gear__icon-wrapper {
+        min-width: 80px;
+        min-height: 80px;
     }
 }
